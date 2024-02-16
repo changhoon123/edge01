@@ -14,7 +14,7 @@ spec:
             "protocol": "NTP",
             "ntp_config": {
               "server": [{
-                  "hostname": "2.pool.ntp.org",
+                  "hostname": "1.pool.ntp.org",
                   "command": "SERVER"
                 },
                 {
