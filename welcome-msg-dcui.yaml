@@ -10,7 +10,7 @@ spec:
       "esx": {
           "system": {
             "welcome_message": {
-                "message": "VMware Edge Cloud Orchestrator - Edge Host"
+                "message": "VMware Edge Cloud Orchestrator - Edge Host!!!!"
             }
           }
       }
