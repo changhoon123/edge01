@@ -4,7 +4,7 @@ metadata:
   name: welcome-message
   namespace: esx-system
 spec:
-  layertype: new
+  layertype: SystemBase
   profile: |
     {
       "esx": {
