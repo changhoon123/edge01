@@ -10,7 +10,7 @@ spec:
       "esx": {
           "system": {
             "welcome_message": {
-                "message": "VMware Edge Cloud Orchestrator - Edge Host \n\t{color:yellow} <F2> Customize System/View Logs{/color}{/align}{align:right}{color:yellow} <F12> Shut Down/Restart{/color}{/align}"
+                "message": "VMware Edge Cloud Orchestrator - Edge Host"
             }
           }
       }
