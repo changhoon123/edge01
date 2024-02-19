@@ -12,7 +12,7 @@ spec:
             "network_vss": {
                 "switches": [
                     {
-                        "name": "vSwitch1",
+                        "name": "vSwitch0",
                         "bridge": {
                             "link_discovery_protocol": {
                                 "protocol": "CDP",
@@ -57,7 +57,7 @@ spec:
                         }
                     },
                     {
-                        "name": "vSwitch2",
+                        "name": "vSwitch1",
                         "policy": {
                             "nic_teaming": {
                                 "policy": "LOADBALANCE_SRCID",
