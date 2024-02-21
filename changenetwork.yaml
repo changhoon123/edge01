@@ -58,7 +58,7 @@ spec:
                         }
                     },
                     {
-                        "name": "vSwitch2",
+                        "name": "vSwitch1",
                         "policy": {
                             "nic_teaming": {
                                 "policy": "LOADBALANCE_SRCID",
