@@ -50,7 +50,7 @@ spec:
                             },
                             "security": {
                                 "allow_promiscuous": false,
-                                "mac_changes": false,
+                                "mac_changes": true,
                                 "forged_transmits": false
                             }
                         }
