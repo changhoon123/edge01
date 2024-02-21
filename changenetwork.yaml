@@ -4,7 +4,7 @@ metadata:
   name: vswitch-config
   namespace: esx-system
 spec:
-  layertype: Incremental
+  layertype: new
   profile: |
     {
         "esx": {
