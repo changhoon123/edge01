@@ -10,15 +10,15 @@ spec:
       "esx": {
         "system": {
           "system_time": {
-            "enabled": enable,
+            "enabled": false,
             "protocol": "NTP",
             "ntp_config": {
               "server": [{
-                  "hostname": "8.8.8.8",
+                  "hostname": "0.pool.ntp.org",
                   "command": "SERVER"
                 },
                 {
-                  "hostname": "0.pool.ntp.org",
+                  "hostname": "1.pool.ntp.org",
                   "command": "SERVER"
                 }
               ]
