@@ -14,10 +14,6 @@ spec:
             "protocol": "NTP",
             "ntp_config": {
               "server": [{
-                  "hostname": "8.8.8.8",
-                  "command": "SERVER"
-                },
-                {
                   "hostname": "1.pool.ntp.org",
                   "command": "SERVER"
                 }
