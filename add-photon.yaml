@@ -2,7 +2,7 @@
 apiVersion: vmoperator.vmware.com/v1alpha1
 kind: VirtualMachine
 metadata:
-  name: photon-vm3
+  name: photon-vm
   namespace: default
   annotations:
     vmoperator.vmware.com/image-supported-check: disable
@@ -30,7 +30,7 @@ data:
       - name: root
         sudo: ALL=(ALL) NOPASSWD:ALL
         lock_passwd: false
-        passwd: 'P@ssw0rd!'
+        passwd: ''
         shell: /bin/bash
     write_files:
       - content: |
