@@ -52,7 +52,7 @@ spec:
                             },
                             "security": {
                                 "allow_promiscuous": false,
-                                "mac_changes": false,
+                                "mac_changes": true,
                                 "forged_transmits": false
                             }
                         }
@@ -85,7 +85,7 @@ spec:
                                 "operation": "LISTEN"
                             },
                             "nics": [
-                                "vmnic2"
+                                "vmnic1"
                             ]
                         },
                         "num_ports": 1024,
