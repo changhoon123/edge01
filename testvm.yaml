@@ -13,16 +13,16 @@ spec:
   - networkName: "VM Network"
     ethernetCardType: "vmxnet3"
   vmMetadata:
-    configMapName: user-data-photon2
+    configMapName: user-data-photon
     transport: CloudInit
-  template:
-    spec:
-      hostname: testvm  # Specify the new hostname here
+#  template:
+#    spec:
+#      hostname: testvm  # Specify the new hostname here
 ---
 apiVersion: v1
 kind: ConfigMap
 metadata:
-    name: user-data-photon2
+    name: user-data-photon
     namespace: default
 data:
   user-data: |
