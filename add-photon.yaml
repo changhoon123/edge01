@@ -20,7 +20,7 @@ spec:
 apiVersion: v1
 kind: ConfigMap
 metadata:
-    name: user-data-photon1
+    name: user-data-photon2
     namespace: default
 data:
   user-data: |
