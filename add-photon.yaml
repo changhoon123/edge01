@@ -14,7 +14,7 @@ spec:
   - networkName: "VM Network"
     ethernetCardType: "vmxnet3"
   vmMetadata:
-    configMapName: user-data-photon1
+    configMapName: user-data-photon2
     transport: CloudInit
 ---
 apiVersion: v1
