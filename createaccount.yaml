@@ -4,7 +4,7 @@ metadata:
   name: monitoring-user
   namespace: esx-system
 spec:
-  layertype: Incremental
+  layertype: SystemBase
   profile: |
     {
       "esx": {
