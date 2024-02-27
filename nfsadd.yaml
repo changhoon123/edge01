@@ -13,7 +13,7 @@ spec:
           "nfs_v3_datastores": [{
               "volume_name": "NFS",
               "hostname": "10.253.241.80",
-              "remote_share": "/share",
+              "remote_share": "share",
               "connections": 1,
               "read_only": false
               }
