@@ -5,7 +5,7 @@ metadata:
   name: nfs-config
   namespace: esx-system
 spec:
-  layertype: SystemBase
+  layertype: Incremental
   profile: |
     {
       "esx": {
