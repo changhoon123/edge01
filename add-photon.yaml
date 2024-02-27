@@ -2,7 +2,7 @@
 apiVersion: vmoperator.vmware.com/v1alpha1
 kind: VirtualMachine
 metadata:
-  name: photon-test2
+  name: photon-vm
   namespace: default
   annotations:
     vmoperator.vmware.com/image-supported-check: disable
@@ -14,13 +14,13 @@ spec:
   - networkName: "VM Network"
     ethernetCardType: "vmxnet3"
   vmMetadata:
-    configMapName: user-data-photon2
+    configMapName: user-data-photon
     transport: CloudInit
 ---
 apiVersion: v1
 kind: ConfigMap
 metadata:
-    name: user-data-photon2
+    name: user-data-photon
     namespace: default
 data:
   user-data: |
@@ -30,7 +30,7 @@ data:
       - name: root
         sudo: ALL=(ALL) NOPASSWD:ALL
         lock_passwd: false
-        passwd: 'Lucky0916!@'
+        passwd: ''
         shell: /bin/bash
     write_files:
       - content: |
