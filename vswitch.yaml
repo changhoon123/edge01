@@ -1,8 +1,8 @@
-#Example host configuration adding a new vSwitch and portgroup and assigning them to vmnic1
+#Example showing how to enable USB NIC Scan on boot
 apiVersion: esx.vmware.com/v1alpha1
 kind: HostConfiguration
 metadata:
-  name: vswitch-config
+  name: usb-nic-scan-on-boot
   namespace: esx-system
 spec:
   layertype: Incremental
@@ -18,7 +18,9 @@ spec:
                                 "protocol": "CDP",
                                 "operation": "LISTEN"
                             },
-                            "nics": ["vmnic0"]
+                            "nics": [
+                                "vmnic0"
+                            ]
                         },
                         "port_groups": [
                             {
@@ -30,7 +32,9 @@ spec:
                                         "notify_switches": true,
                                         "rolling_order": false,
                                         "link_criteria_beacon": "IGNORE",
-                                        "active_nics": ["vmnic0"],
+                                        "active_nics": [
+                                            "vmnic0"
+                                        ],
                                         "standby_nics": []
                                     }
                                 }
@@ -46,7 +50,9 @@ spec:
                                 "notify_switches": true,
                                 "rolling_order": false,
                                 "link_criteria_beacon": "IGNORE",
-                                "active_nics": ["vmnic0"],
+                                "active_nics": [
+                                    "vmnic0"
+                                ],
                                 "standby_nics": []
                             },
                             "security": {
@@ -57,7 +63,7 @@ spec:
                         }
                     },
                     {
-                        "name": "vSwitch1",
+                        "name": "NewvSwitch",
                         "policy": {
                             "nic_teaming": {
                                 "policy": "LOADBALANCE_SRCID",
@@ -82,16 +88,13 @@ spec:
                             "link_discovery_protocol": {
                                 "protocol": "CDP",
                                 "operation": "LISTEN"
-                            },
-                            "nics": [
-                                "vmnic1"
-                            ]
+                            }
                         },
                         "num_ports": 1024,
                         "mtu": 1500,
                         "port_groups": [
                             {
-                                "name": "VM Network 16",
+                                "name": "New port group",
                                 "vlan_id": 0
                             }
                         ]
