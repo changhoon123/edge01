@@ -1,4 +1,4 @@
-#Example showing how to change the DCUI Welcome message
+ #Example showing how to change the DCUI Welcome message
 apiVersion: esx.vmware.com/v1alpha1
 kind: HostConfiguration
 metadata:
